@@ -6,6 +6,7 @@ angular.module('mgo-angular-wizard').directive('wzStep', function() {
         scope: {
             wzTitle: '@',
             title: '@',
+            stepIcon: '@',
             canenter : '=',
             canexit : '='
         },
@@ -16,6 +17,7 @@ angular.module('mgo-angular-wizard').directive('wzStep', function() {
         link: function($scope, $element, $attrs, wizard) {
             $scope.title = $scope.title || $scope.wzTitle;
             wizard.addStep($scope);
+            $scope.stepIcon = $scope.stepIcon || $scope.wzstepIcon;
         }
     };
 });
