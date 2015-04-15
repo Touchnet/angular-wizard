@@ -1,7 +1,7 @@
 /**
- * Easy to use Wizard library for AngularJS
- * @version v0.4.3 - 2015-04-15 * @link https://github.com/mgonto/angular-wizard
- * @author Martin Gontovnikas <martin@gon.to>
+ * Easy to use Wizard library for AngularJS - Touchnet customization
+ * @version v0.4.4 - 2015-04-15 * @link https://github.com/Touchnet/angular-wizard
+ * @author Daniele Forte <daniele@touchnet.it>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 angular.module('templates-angularwizard', ['step.html', 'wizard.html']);

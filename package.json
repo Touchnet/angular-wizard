@@ -1,14 +1,14 @@
 {
   "name": "angular-wizard",
-  "description": "Easy to use Wizard library for AngularJS",
-  "version": "0.4.3",
+  "description": "Easy to use Wizard library for AngularJS - Touchnet customization",
+  "version": "0.4.4",
   "filename": "angular-wizard.min.js",
   "main": "./dist/angular-wizard.min.js",
-  "homepage": "https://github.com/mgonto/angular-wizard",
-  "author": "Martin Gontovnikas <martin@gon.to>",
+  "homepage": "https://github.com/Touchnet/angular-wizard",
+  "author": "Daniele Forte <daniele@touchnet.it>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mgonto/angular-wizard.git"
+    "url": "git://github.com/Touchnet/angular-wizard.git"
   },
   "engines": {
     "node": ">= 0.9"
@@ -23,8 +23,8 @@
   ],
   "maintainers": [
     {
-      "name": "Martin Gontovnikas",
-      "website": "http://gon.to/"
+      "name": "Daniele Forte",
+      "website": "http://touchnet.it"
     }
   ],
   "dependencies": {},
