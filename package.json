@@ -1,14 +1,14 @@
 {
-  "name": "angular-wizard",
+  "name": "angular-wizard-touchnet",
   "description": "Easy to use Wizard library for AngularJS - Touchnet customization",
   "version": "0.4.4",
   "filename": "angular-wizard.min.js",
   "main": "./dist/angular-wizard.min.js",
-  "homepage": "https://github.com/Touchnet/angular-wizard",
+  "homepage": "https://github.com/Touchnet/angular-wizard-touchnet",
   "author": "Daniele Forte <daniele@touchnet.it>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Touchnet/angular-wizard.git"
+    "url": "git://github.com/Touchnet/angular-wizard-touchnet.git"
   },
   "engines": {
     "node": ">= 0.9"
