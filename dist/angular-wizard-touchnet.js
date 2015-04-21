@@ -20,7 +20,7 @@ angular.module("wizard.html", []).run(["$templateCache", function($templateCache
     "        <a ng-click=\"goTo(step)\"><div class=\"stepNumber\"><i class=\"{{step.stepIcon}}\"></i></div><span class=\"stepDesc\">{{step.title || step.wzTitle}}</span></a>\n" +
     "      </li>\n" +
     "    </ul>\n" +
-    "    <div class=\"steps\" ng-transclude></div>\n" +
+    "    <div class=\"steps swMain\" ng-transclude></div>\n" +
     "</div>\n" +
     "\n" +
     "");
