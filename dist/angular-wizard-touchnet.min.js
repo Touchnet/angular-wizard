@@ -1,6 +1,6 @@
 /**
  * Easy to use Wizard library for AngularJS - Touchnet customization
- * @version v0.4.4 - 2015-04-21 * @link https://github.com/Touchnet/angular-wizard-touchnet
+ * @version v0.4.5 - 2015-04-21 * @link https://github.com/Touchnet/angular-wizard-touchnet
  * @author Daniele Forte <daniele@touchnet.it>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
