@@ -1,6 +1,6 @@
 {
   "name": "angular-wizard-touchnet",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "main": "./dist/angular-wizard.js",
   "description": "Easy to use Wizard library for AngularJS - Touchnet customization",
   "repository": {
