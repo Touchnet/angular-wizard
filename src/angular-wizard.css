@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
 }
-.steps-indicator.stepNumber {
+.steps-indicator .stepNumber {
   background-color: #FFFFFF;
   border: 5px solid #CED1D6;
   border-radius: 100% 100% 100% 100%;
@@ -20,7 +20,7 @@
   width: 40px;
   z-index: 2;
 }
-.steps-indicator.stepDesc {
+.steps-indicator .stepDesc {
   color: #949EA7;
   display: block;
   font-size: 14px;
@@ -33,7 +33,6 @@
   z-index: 104;
 }
 .steps-indicator:before {
-  background-color: #e6e6e6;
   content: '';
   position: absolute;
   height: 1px;
@@ -119,36 +118,6 @@
   max-width: 50%;
   width: 50%;
 }
-.steps-indicator.steps-2 li {
-  width: calc(50%);
-}
-.steps-indicator.steps-3 li {
-  width: calc(33.33333333%);
-}
-.steps-indicator.steps-4 li {
-  width: calc(25%);
-}
-.steps-indicator.steps-5 li {
-  width: calc(20%);
-}
-.steps-indicator.steps-6 li {
-  width: calc(16.66666667%);
-}
-.steps-indicator.steps-7 li {
-  width: calc(14.28571429%);
-}
-.steps-indicator.steps-8 li {
-  width: calc(12.5%);
-}
-.steps-indicator.steps-9 li {
-  width: calc(11.11111111%);
-}
-.steps-indicator.steps-10 li {
-  width: calc(10%);
-}
-.steps-indicator.steps-11 li {
-  width: calc(9.09090909%);
-}
 .steps-indicator li.default {
   pointer-events: none;
 }
@@ -187,5 +156,35 @@
 }
 .steps-indicator li.editing a:before {
   background-color: #003c69;
+}
+.steps-indicator.steps-2 li {
+  width: calc(50%);
+}
+.steps-indicator.steps-3 li {
+  width: calc(33.33333333%);
+}
+.steps-indicator.steps-4 li {
+  width: calc(25%);
+}
+.steps-indicator.steps-5 li {
+  width: calc(20%);
+}
+.steps-indicator.steps-6 li {
+  width: calc(16.66666667%);
+}
+.steps-indicator.steps-7 li {
+  width: calc(14.28571429%);
+}
+.steps-indicator.steps-8 li {
+  width: calc(12.5%);
+}
+.steps-indicator.steps-9 li {
+  width: calc(11.11111111%);
+}
+.steps-indicator.steps-10 li {
+  width: calc(10%);
+}
+.steps-indicator.steps-11 li {
+  width: calc(9.09090909%);
 }
 /*# sourceMappingURL=angular-wizard.css.map */
