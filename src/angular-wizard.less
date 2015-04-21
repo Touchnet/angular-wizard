@@ -1,178 +1,246 @@
 .steps-indicator {
-  /* ---- steps quantity ---- */
 
-  @color-default: #E6E6E6;
-  @color-current: #808080;
-  @color-done:    #339933;
-  @color-editing: #FF0000;
+    @color-default: #E6E6E6;
+    @color-current: #2B3D53;
+    @color-done: #5293C4;
+    @color-editing: #003C69;
 
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 20px 0 0 0;
-  height: 30px;
-  list-style: none;
-  
+    @color-lihover: #4d4d4d;
 
-
-  &:before {
-    background-color: @color-default;
-    content: '';
-    position: absolute;
-    height: 1px;
-  }
-
-  &.steps-2:before {
-    left: ~'calc(100% / 2 / 2)';
-    right: ~'calc(100% / 2 / 2)';
-  }
-
-  &.steps-3:before {
-    left: ~'calc(100% / 3 / 2)';
-    right: ~'calc(100% / 3 / 2)';
-  }
-
-  &.steps-4:before {
-    left: ~'calc(100% / 4 / 2)';
-    right: ~'calc(100% / 4 / 2)';
-  }
-
-  &.steps-5:before {
-    left: ~'calc(100% / 5 / 2)';
-    right: ~'calc(100% / 5 / 2)';
-  }
-
-  &.steps-6:before {
-    left: ~'calc(100% / 6 / 2)';
-    right: ~'calc(100% / 6 / 2)';
-  }
-
-  &.steps-7:before {
-    left: ~'calc(100% / 7 / 2)';
-    right: ~'calc(100% / 7 / 2)';
-  }
-
-  &.steps-8:before {
-    left: ~'calc(100% / 8 / 2)';
-    right: ~'calc(100% / 8 / 2)';
-  }
-
-  &.steps-9:before {
-    left: ~'calc(100% / 9 / 2)';
-    right: ~'calc(100% / 9 / 2)';
-  }
-
-  &.steps-10:before {
-    left: ~'calc(100% / 10 / 2)';
-    right: ~'calc(100% / 10 / 2)';
-  }
-
-  /* --- http://www.paulirish.com/2012/box-sizing-border-box-ftw/ ---- */
-  * { 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box; 
-    box-sizing: border-box;
-  }
-
-
-  li {
-    position: relative;
-    float: left;
-    margin: 0;
+    display: table;
+    list-style: none;
+    margin: 0 0 20px 0;
     padding: 0;
-    padding-top: 10px;
-    text-align: center;
-    line-height: 15px;
+    position: relative;
+    width: 100%;
 
-    a {
-      color: @color-current;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: 0.25s;
-      cursor: pointer;
+    &.stepNumber {
+        background-color: #FFFFFF;
+        border: 5px solid #CED1D6;
+        border-radius: 100% 100% 100% 100%;
+        color: #546474;
+        display: inline-block;
+        font-size: 15px;
+        height: 40px;
+        line-height: 30px;
+        position: relative;
+        text-align: center;
+        width: 40px;
+        z-index: 2;
+    }
 
-      &:before {
-        position: absolute;
-        top: -7px;
-        left: ~'calc(50% - 7px)';
-        width: 14px;
-        height: 14px;
-        border-radius: 100%;
+    &.stepDesc {
+        color: #949EA7;
+        display: block;
+        font-size: 14px;
+        margin-top: 4px;
+        max-width: 100%;
+        table-layout: fixed;
+        text-align: center;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        z-index: 104;
+    }
+
+    &:before {
         background-color: @color-default;
         content: '';
-        transition: 0.25s;
-      }
-
-      &:hover {
-        color: darken(@color-current, 20%);
-      }
+        position: absolute;
+        height: 1px;
     }
-  }
 
-  &.steps-2  li {
-    width: ~'calc(100% / 2)';
-  }
-
-  &.steps-3  li {
-    width: ~'calc(100% / 3)';   
-  }
-
-  &.steps-4  li {
-    width: ~'calc(100% / 4)';
-  }
-
-  &.steps-5  li {
-    width: ~'calc(100% / 5)';
-  }
-
-  &.steps-6  li {
-    width: ~'calc(100% / 6)';
-  }
-
-  &.steps-7  li {
-    width: ~'calc(100% / 7)';
-  }
-
-  &.steps-8  li {
-    width: ~'calc(100% / 8)';
-  }
-
-  &.steps-9  li {
-    width: ~'calc(100% / 9)';
-  }
-
-  &.steps-10 li  {
-    width: ~'calc(100% / 10)';
-  }
-
-  &.steps-11 li  {
-    width: ~'calc(100% / 11)';
-  }
-
-  li.default {
-    pointer-events: none;
-
-    a:hover {
-      color: @color-current;
+    &.steps-2:before {
+        right: calc(25%);
+        left: calc(25%);
     }
-  }
 
-  li.current,
-  li.editing {
-    pointer-events: none;
-  }
+    &.steps-3:before {
+        right: calc(16.666666666666668%);
+        left: calc(16.666666666666668%);
+    }
 
-  li.current a:before {
-    background-color: @color-current;
-  }
+    &.steps-4:before {
+        right: calc(12.5%);
+        left: calc(12.5%);
+    }
 
-  li.done a:before {
-    background-color: @color-done;
-  }
+    &.steps-5:before {
+        right: calc(10%);
+        left: calc(10%);
+    }
 
-  li.editing a:before {
-    background-color: @color-editing;
-  }
+    &.steps-6:before {
+        right: calc(8.333333333333334%);
+        left: calc(8.333333333333334%);
+    }
+
+    &.steps-7:before {
+        right: calc(7.142857142857143%);
+        left: calc(7.142857142857143%);
+    }
+
+    &.steps-8:before {
+        right: calc(6.25%);
+        left: calc(6.25%);
+    }
+
+    &.steps-9:before {
+        right: calc(5.555555555555555%);
+        left: calc(5.555555555555555%);
+    }
+
+    &.steps-10:before {
+        right: calc(5%);
+        left: calc(5%);
+    }
+
+    & * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    li {
+        display: table-cell;
+        text-align: center;
+        width: 1%;
+        color: @color-current;
+
+        a {
+            font-weight: bold;
+            color: @color-current;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            -moz-transition: 0.25s;
+            -o-transition: 0.25s;
+            -webkit-transition: 0.25s;
+            transition: 0.25s;
+
+            &:before {
+                border-top: 4px solid #CED1D6;
+                content: "";
+                display: block;
+                font-size: 0;
+                height: 1px;
+                overflow: hidden;
+                position: relative;
+                top: 21px;
+                width: 100%;
+                z-index: 1;
+            }
+
+            &:hover {
+                color: @color-lihover;
+            }
+        }
+
+
+        &:first-child > a:before {
+            left: 50%;
+            max-width: 51%;
+        }
+
+        &:last-child > a:before {
+            max-width: 50%;
+            width: 50%;
+        }
+    }
+
+    &.steps-2 li {
+        width: calc(50%);
+    }
+
+    &.steps-3 li {
+        width: calc(33.333333333333336%);
+    }
+
+    &.steps-4 li {
+        width: calc(25%);
+    }
+
+    &.steps-5 li {
+        width: calc(20%);
+    }
+
+    &.steps-6 li {
+        width: calc(16.666666666666668%);
+    }
+
+    &.steps-7 li {
+        width: calc(14.285714285714286%);
+    }
+
+    &.steps-8 li {
+        width: calc(12.5%);
+    }
+
+    &.steps-9 li {
+        width: calc(11.11111111111111%);
+    }
+
+    &.steps-10 li {
+        width: calc(10%);
+    }
+
+    &.steps-11 li {
+        width: calc(9.090909090909092%);
+    }
+
+
+
+    li.default {
+        pointer-events: none;
+
+        a:hover {
+            color: @color-current;
+
+        }
+    }
+
+    li.current{
+        a:before {
+          border-color: @color-done;
+          background-color: @color-current;
+        }
+
+        .stepNumber{
+          border-color: @color-done;
+        }
+    }
+
+    li.done{
+        .stepNumber{
+            border-color: @color-done;
+            background-color: @color-done;
+            color: #fff;
+            text-indent: -9999px;
+        }
+        a:before {
+            background-color: @color-done;
+        }
+
+        > a .stepNumber:before{
+            content: "\f00c";
+            display: inline;
+            float: right;
+            font-family: FontAwesome;
+            font-weight: 300;
+            height: auto;
+            text-shadow: none;
+            margin-right: 7px;
+            text-indent: 0;
+        }
+
+    }
+
+    li.editing { 
+        pointer-events: none;
+
+        a:before {
+            background-color: @color-editing;
+        }
+
+    }
 }
