@@ -107,6 +107,9 @@
   width: 100%;
   z-index: 1;
 }
+.steps-indicator li.done a:before {
+  border-top: 4px solid #5293C4;
+}
 .steps-indicator li a:hover {
   color: #4d4d4d;
 }
